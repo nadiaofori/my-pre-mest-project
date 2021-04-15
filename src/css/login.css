@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logform{
+    display: flex;
+    height: 100vh;
+    /* background-color: orangered; */
+}
+::placeholder{
+    justify-content: space-around;
+    font-size: small;
+}
+.loginput{
+    display: flex;
+    height: 100%;
+    width: 100% ;
+    /* background-color: grey; */
+    flex: 0.5;
+    flex-direction: column;
+    border-radius: 8px;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: -1px -1px 20px 0px gray;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.imagediv{
+    display: flex;
+    background-image: url(../images/grid.jpg);
+    flex: 0.5;
+    flex-direction: column;
+    border-radius: 8px;
+    /* width: 50px;
+    height: 50px; */
+}
+.logbutton{
+    display: flex;
+    flex: 0.15;
+    margin:20px;
+    justify-content: space-between; 
+    padding-right: 5px;
+}

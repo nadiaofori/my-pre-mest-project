@@ -1,0 +1,63 @@
+.wpage{
+    display: flex;
+    /* background-image: url('../images/grid.jpg'); */
+    background-image: url(https://octobergallery.co.uk/website_safezone/images/headers/medium/AG0569_Red_People_III__IML5468.jpg);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.navbar{
+    display: flex;
+    background-color: hsla(230, 23%, 95%, 0.5);
+    flex: 0.1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* color: white; */
+}   
+.LA{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
+}
+
+.btn{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    height: 35px;
+    width: 80px;
+    font-style: normal;
+    font-size: medium;
+    
+
+}
+.mpage{
+    display: flex;
+    background-color: blueviolet;
+    background-image: url(https://octobergallery.co.uk/website_safezone/images/headers/medium/AG0569_Red_People_III__IML5468.jpg);
+    flex: 0.6;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+    color: azure;
+}
+
+.fpage{
+    display: flex;
+    background-color: white;
+    flex: 0.3;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+}

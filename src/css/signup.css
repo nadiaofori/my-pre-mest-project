@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.headform{
+    display: flex;
+    height: 100vh;
+    background-color: dodgerblue;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.subhead{
+    display: flex;
+    flex: 0.1;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+}
+
+.inputform{
+    height: 390px;
+    width: 250px;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 15px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    box-shadow: -1px -1px 20px 0px gray;
+    justify-self: center;
+    align-self: center;
+}
+
+.inputlable{
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -1px 0px 10px 0px gray;
+    background-color: transparent;
+    color:white;
+    font-size: 12px;
+    /* margin-bottom: 10px;
+    margin-top: 20px; */
+}
+
+.inputlable{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
