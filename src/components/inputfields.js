@@ -1,16 +1,21 @@
 
 
-function InputField ({label, type, inputlabel, placeholder, name, onchange, className}){
+function InputField({ label, type, placeholder, name, onchange, className }) {
 
 
-    return(
+    return (
         <div>
-        <label className={inputlabel}>{label}</label>
-        <input type={type} 
-        placeholder={placeholder} 
-        name={name}
-        onChange={onchange}
-        className={className} />
+            <div className="label">
+                <label style={{ fontSize: "25px", marginRight:"60px" }}>{label}</label>
+            </div>
+            <div>
+            <input type={type}
+                placeholder={placeholder}
+                name={name}
+                onChange={onchange}
+                className={className} />
+            </div>
+        
         </div>
     )
 }

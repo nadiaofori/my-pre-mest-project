@@ -13,33 +13,52 @@ function Signup() {
 
     const onchange = (e) =>{
         setvalues({...values, [e.target.name]: e.target.value})
+        console.log(values);
     }
-    const gotologin = (e) =>{
-        e.preventDefault();
-        history.push("/login")
-    }
-    // const submit = (e) =>{
+    // const gotosignin = (e) =>{
     //     e.preventDefault();
-    //     console.log(values);
+    //     history.push("/signin")
     // }
+    const submit = (e) =>{
+        e.preventDefault();
+        console.log(values);
+        fetch('http://localhost:5000/api/v1/signup', 
+        {
+          method: 'POST',
+          body: JSON.stringify(values),
+          headers: {
+            'Content-Type': 'application/json'
+          },
+        })
+        .then(response => response.json())
+        .then(responseData => {
+          console.log(responseData);
+    
+          
+        },err=>console.log(err))
+    }
+
 
     return (
         <form className="headform">
-            <h1 className="subhead">Sign Up</h1>
+            <div className="subhead">
+             <h1>Sign Up</h1>
+            </div>
             <div className="inputform">
-            <InputField type="text" label="Firstname" className="inputlable" placeholder="e.g collins" onchange={onchange} />
-            <InputField type="text" label="Lastname" className="inputlable" placeholder="e.g wiredu" onchange={onchange} />
-            <InputField type="text" label="Username" className="inputlable" placeholder="e.g cole" onchange={onchange} />
-            <InputField type="email" label="Email" className="inputlable" placeholder="e.g collins@gmail.com" onchange={onchange} />
-            <InputField type="password" label="Password" className="inputlable" name="password" onchange={onchange} />
-            <InputField type="Password" label="Confirm Password"className="inputlable" name="cpassword" onchange={onchange} />
+                <div className="maininput">
+                    {/* <InputField type="text" label="Firstname" name="firstname"  className="inputlable" placeholder="e.g collins" onchange={onchange} />
+                    <InputField type="text" label="Lastname"  name="lastname" className="inputlable" placeholder="e.g wiredu" onchange={onchange} /> */}
+                    <InputField type="text" label="Username"  name="username" className="inputlable" placeholder="e.g cole" onchange={onchange} />
+                    <InputField type="email" label="Email"  name="email" className="inputlable" placeholder="e.g collins@gmail.com" onchange={onchange} />
+                    <InputField type="password" label="Password" className="inputlable" name="password" onchange={onchange} />
+                    <InputField type="Password" label="Confirm Password"className="inputlable" name="cpassword" onchange={onchange} />
+                    <Button text="Signup" classname="buttoninput" onclick={submit} />
+                </div>
+                    <div className="link">
+                    <Link to="/signin">Member of the Library? </Link>
+                    </div>
             </div>
-            <div>
-                <Button text="Signup" onclick={gotologin} />
-                {/* <Button text="Login " onclick={gotodashboard} /> */}
-                <Link to="/login">Member of the Library </Link>
-            </div>
-            </form>
+        </form>
     )
 }
 

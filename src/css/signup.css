@@ -6,28 +6,25 @@
 .headform{
     display: flex;
     height: 100vh;
-    background-color: dodgerblue;
+    background-image:  url(https://hopeforghana.com/wp-content/uploads/2020/10/paul131-1024x852.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
 .subhead{
     display: flex;
     flex: 0.1;
+    color: white;
     justify-content: center;
     align-items: center;
-    /* justify-content: center; */
-    /* align-items: center; */
-
+    margin-bottom: 20px;
 }
 
 .inputform{
-    height: 390px;
-    width: 250px;
-    background-color: white;
+    height: 600px;
+    width: 400px;
+    background-color: rgba(255, 83, 30, 0.747);
     flex-direction: column;
     border-radius: 15px;
     background-size: 100% 100%;
@@ -36,21 +33,50 @@
     box-shadow: -1px -1px 20px 0px gray;
     justify-self: center;
     align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.maininput{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    font-size: 12px;
+    height: 550px;
+    justify-content: space-evenly;
 }
 
 .inputlable{
+    margin-left: 40px;
+    height: 30px;
+    width: 300px;
+    align-self: center;
+    justify-self: center;
     padding: 5px 5px;
     border-radius: 5px;
     border: none;
     box-shadow: -1px 0px 10px 0px gray;
-    background-color: transparent;
-    color:white;
-    font-size: 12px;
-    /* margin-bottom: 10px;
-    margin-top: 20px; */
-}
-
-.inputlable{
+    
+} 
+.label{
+    margin-left: 40px;
     margin-bottom: 10px;
+    color: white;
+}
+.buttoninput{
+    height: 40px;
+    width: 310px;
+    font-size: larger;
     margin-top: 20px;
+    margin-left: 40px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -1px 0px 10px 0px gray;
+}
+.link{
+    margin-top: 10px;
+    margin-left: 100px;
+    align-self: center;
+    justify-self: center;
 }

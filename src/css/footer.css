@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fpage{
+    display: flex;
+    color: white;
+    /* background-color: red; */
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1500px;
+    padding-bottom: 20px;
+}
+.art{
+    height: 100px;
+}

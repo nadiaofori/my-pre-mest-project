@@ -1,0 +1,52 @@
+.maincontainer{
+    display: flex;
+    background-color: rgba(202,183,88,255);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    
+}
+.left{
+    display: flex;
+    background-color: rgba(202,183,88,255);
+    flex: 0.1;
+    flex-direction: column;
+    margin-bottom: 20vh;
+    margin-top: 6vh;
+    padding-left: 15px;
+    justify-content: space-around;
+}
+
+.right{
+    display: flex;
+    /* background-color: green; */
+    flex: 0.9px;
+    flex-direction: column;
+}
+.righttop{
+    display: flex;
+    flex: 0.15;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.rightbottom{
+    display: flex;
+    flex: 0.85;
+    border-radius: 15px;
+    background-color: #4d49398f;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image:url(../images/Drums.png);
+}
+
+.img{
+    display: flex;
+    flex: 0.5;
+    background-color: #4d49398f;
+    
+}
+.grade{
+   background-color: #4d49398f;
+    width:168vh
+} 

@@ -5,41 +5,63 @@
 .logform{
     display: flex;
     height: 100vh;
-    /* background-color: orangered; */
-}
-::placeholder{
-    justify-content: space-around;
-    font-size: small;
+    background-image: url(https://hopeforghana.com/wp-content/uploads/2020/10/paul131-1024x852.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    justify-content: center;
+    align-items: center;
 }
 .loginput{
     display: flex;
-    height: 100%;
-    width: 100% ;
-    /* background-color: grey; */
-    flex: 0.5;
-    flex-direction: column;
-    border-radius: 8px;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    box-shadow: -1px -1px 20px 0px gray;
+    height: 500px;
+    width: 400px;
+    background-color: rgba(255, 83, 30, 0.747);
     align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-.imagediv{
-    display: flex;
-    background-image: url(../images/grid.jpg);
-    flex: 0.5;
+    /* justify-content: space-evenly; */
     flex-direction: column;
-    border-radius: 8px;
-    /* width: 50px;
-    height: 50px; */
+    border-radius: 20px;
+    color: white;
+   
+    /* align-content: center; */
 }
-.logbutton{
+.inputfields{
     display: flex;
-    flex: 0.15;
-    margin:20px;
-    justify-content: space-between; 
-    padding-right: 5px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+.imageicon{
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.iptf{
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    font-size: larger;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    /* margin-right: 100px; */
+    width: 300px;
+}
+.btn{
+    height: 40px;
+    width: 300px;
+    font-size: larger;
+    margin-top: 20px;
+    border: none;
+}
+.userdiv{
+    
+    justify-content: space-around;
+}
+.placeholder{
+    margin-left: 15px;
 }
