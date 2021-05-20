@@ -29,7 +29,7 @@ const Navbar = () =>{
             <div className="designs">
                     <div className="art">
                      <Link to="/" className="link">
-                         <h1>ARTS</h1>
+                         <h1>𝓐𝓡𝓣𝓢</h1>
                      </Link>
                     </div>
                     <div className="list1">

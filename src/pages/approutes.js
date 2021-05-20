@@ -5,9 +5,10 @@ import Signin from "../pages/signin"
 import Signup from "../pages/signup"
 import Dashboard from "../pages/dashboard"
 import Pottery from "../details/pottery/pottery"
-import SculpRoutes from "../details/sculpture/sculproutes"
+import Sculpture from "../details/sculpture/sculpture"
 import Textiles from "../details/textiles/textiles"
 import Leather from "../details/leather/leather"
+import Painting from "../details/painting/painting"
 
 
 const AppRoutes = () => {
@@ -19,10 +20,10 @@ const AppRoutes = () => {
             <Route exact path ="/signup" component={Signup} />
             <Route exact path ="/dashboard" component={Dashboard} />
             <Route exact path ="/pottery" component={Pottery} />
-            <Route exact path ="/sculpRoutes" component={SculpRoutes} />
+            <Route exact path ="/sculpture" component={Sculpture} />
             <Route exact path ="/textiles" component={Textiles}/>
             <Route exact path="/leather" component={Leather}/>
-
+            <Route exact path="/painting" component={Painting}/>
         </Switch>
     )
 }

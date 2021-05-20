@@ -39,7 +39,7 @@
     text-decoration: none;
     font-weight: 400;
     font-size: xx-large;
-    text-shadow: 2px 2px 5px red;
+    /* text-shadow: 2px 2px 5px red; */
 }
 .art{
     display: flex;

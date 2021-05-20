@@ -22,9 +22,9 @@
     font-size: xx-large;
     color: white;
     text-shadow: 2px 2px 5px red;
-  }
-  .texts{
+}
+.texts{
     text-align: justify;
-    padding: 20px;
-    background-color: #cccccc;
+    padding: 50px;
+    /* background-color: #cccccc; */
 }

@@ -7,7 +7,7 @@ function Dashboard() {
         <div className="maindiv">
             <div className="divisions">
             <div className="sub1">
-                 <h3><Link to="/Sculproutes" className="links">Sculpture</Link></h3>
+                 <h3><Link to="/Sculpture" className="links">Sculpture</Link></h3>
             </div>
             <div className="sub2">
                  <h3><Link to="/Textiles" className="links">Textiles</Link></h3>
@@ -21,7 +21,7 @@ function Dashboard() {
                         <h3 ><Link to="/Pottery" className="links">Ceramics and Pottery</Link></h3>
                     </div>
                     <div className="div2sub2">
-                        <h3><Link to="/Details" className="links">Drawing and Painting</Link></h3>
+                        <h3><Link to="/Painting" className="links">Drawing and Painting</Link></h3>
                     </div>
             </div>
         </div>

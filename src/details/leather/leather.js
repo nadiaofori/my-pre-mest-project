@@ -1,4 +1,6 @@
 import '../../css/leather.css'
+import TextAnimation from 'react-animate-text'
+
 
 const Leather = () =>{
 
@@ -6,12 +8,16 @@ const Leather = () =>{
         <div>
             <div className="he-image">
                 <div className="he-text">
-                 <h1>Leather</h1>
+                    <TextAnimation>
+                    <h1>Leather</h1>
+                    </TextAnimation>
                 </div>
             </div>
             <div className="texts">
+
+                
                 <h3 style={{ marginBottom: "10px", fontSize: "x-large" }}>Definition</h3>
-                    <p>Leather work is defined as making items from tanned animal skin.</p>
+                    <p style={{ marginTop: "10px", fontSize: "large" }}>Leather work is defined as making items from tanned animal skin.</p>
                 <h3 style={{ marginBottom: "10px", marginTop: "10px", fontSize: "x-large" }}>Types</h3>
                     <li style={{ marginTop: "10px", fontSize: "large" }}>Full grain</li>
                     <li style={{ marginTop: "10px", fontSize: "large" }}>Top grain</li>

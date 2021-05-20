@@ -1,5 +1,5 @@
 import '../../css/pottery.css'
-
+import TextAnimation from 'react-animate-text'
 
 const Pottery = () => {
 
@@ -7,7 +7,9 @@ const Pottery = () => {
         <div>
             <div className="hero-image">
                 <div className="hero-text">
+                    <TextAnimation>
                     <h1>Ceramics and Pottery</h1>
+                    </TextAnimation>
                 </div>
 
             </div>

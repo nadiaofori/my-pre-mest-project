@@ -20,7 +20,7 @@ function Home() {
                 </div>
                 <div className="mpage" >
                    <TextAnimation>
-                        <h1>Welcome to the margical world<br /> of art work in Ghana</h1>
+                        <h1>𝓦𝓔𝓛𝓒𝓞𝓜𝓔 𝓣𝓞 𝓣𝓗𝓔 𝓜𝓐𝓖𝓘𝓒𝓐𝓛 𝓦𝓞𝓡𝓛𝓓 𝓞𝓕 <br />𝓐𝓡𝓣 𝓘𝓝 𝓖𝓗𝓐𝓝𝓐 </h1>
                     </TextAnimation> 
                 </div>
                 <div className="food">

@@ -1,4 +1,6 @@
 import '../../css/textiles.css'
+import TextAnimation from 'react-animate-text'
+
 
 const Textiles =() =>{
 
@@ -7,7 +9,9 @@ const Textiles =() =>{
         <div>
             <div  className="h-image">
                 <div className="h-text">
+                    <TextAnimation>
                     <h1>Textiles</h1>
+                    </TextAnimation>
                 </div>
             </div>
             <div className="texts">

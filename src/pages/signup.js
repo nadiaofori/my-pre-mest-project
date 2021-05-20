@@ -1,13 +1,13 @@
-import { useHistory, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { useState } from "react"
-
+import { useHistory } from "react-router-dom"
 import '../css/signup.css'
 import Button from "../components/button";
 import InputField from "../components/inputfields";
 
 
 function Signup() {
-    let history= useHistory()
+    let history = useHistory()
     const [values, setvalues] = useState({})
 
 
@@ -15,10 +15,7 @@ function Signup() {
         setvalues({...values, [e.target.name]: e.target.value})
         console.log(values);
     }
-    // const gotosignin = (e) =>{
-    //     e.preventDefault();
-    //     history.push("/signin")
-    // }
+    
     const submit = (e) =>{
         e.preventDefault();
         console.log(values);
@@ -28,14 +25,16 @@ function Signup() {
           body: JSON.stringify(values),
           headers: {
             'Content-Type': 'application/json'
-          },
+          }
         })
         .then(response => response.json())
-        .then(responseData => {
-          console.log(responseData);
+        .then(response => {
+          console.log(response);
+          history.push('/signin')
+
     
           
-        },err=>console.log(err))
+        })
     }
 
 
@@ -54,7 +53,7 @@ function Signup() {
                     <InputField type="Password" label="Confirm Password"className="inputlable" name="cpassword" onchange={onchange} />
                     <Button text="Signup" classname="buttoninput" onclick={submit} />
                 </div>
-                    <div className="link">
+                    <div className="lin">
                     <Link to="/signin">Member of the Library? </Link>
                     </div>
             </div>
