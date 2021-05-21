@@ -74,7 +74,6 @@ function Signin() {
 
             }, err => console.log(err))
 
-        // console.log ({Username, password})
     }
 
 
