@@ -18,7 +18,7 @@ function Signup() {
     const submit = (e) =>{
         e.preventDefault();
         console.log(values);
-        fetch('http://localhost:5000/api/v1/signup', 
+        fetch('https://magical-art-backend.herokuapp.com/api/v1/signup', 
         {
           method: 'POST',
           body: JSON.stringify(values),
@@ -29,10 +29,7 @@ function Signup() {
         .then(response => response.json())
         .then(response => {
           console.log(response);
-          history.push('/signin')
-
-    
-          
+          history.push('/signin')  
         })
     }
 
