@@ -4,47 +4,18 @@ import '../css/login.css';
 import image from '../images/login-xxl.png';
 import { Link } from 'react-router-dom';
 import { useHistory } from "react-router-dom";
-import { useState, useEffect } from "react";
-import validateMethod from "../components/validation";
+import { useState } from "react";
+// import validateMethod from "../components/validation"
 
 // import { useAppContext } from "../components/context"
 
 function Signin() {
-    const [values, setValues] = useState({})
-    const [userInfo, setUserInfo] = useState({
-        name: "",
-        email: "",
-        password: "",
-        confirmPassword: "",
-        formError: { email: "", password: "", comparePassword: "", name: "" },
-        formValid: false,
-        emailValid: false,
-        passwordValid: false,
-        nameValid: false,
-        fieldNameEmail: "email",
-        fieldNamePassword: "password",
-        fieldNameUserName: "name"
-    });
     let history = useHistory()
-
-
-    useEffect(() => {
-        validateMethod(userInfo.fieldNameEmail, userInfo.email, userInfo, setUserInfo)
-        
-    }, [userInfo.email, userInfo.emailValid])
-
-    const [message, setmessage] = useState({})
-
-    const handleChange = (e) => {
-        const value = e.target.value;
-        setUserInfo({
-          ...userInfo,
-          [e.target.name]: value
-        });
-      };
-    // const onChange = (e) => {
-    //     setValues({ ...values, [e.target.name]: e.target.value })
-    // }
+    const [values, setValues] = useState({})
+    
+    const onChange = (e) => {
+        setValues({ ...values, [e.target.name]: e.target.value })
+    }
 
     const submit = (e) => {
         e.preventDefault();
@@ -83,8 +54,8 @@ function Signin() {
                     <img src={image} alt="icon" className="imageicon" />
                 </div>
                 <div className="inputfields">
-                    <InputField value={userInfo.email}  type="Email" label="Email" name="email" className="iptf" onchange={handleChange} placeholder="e.g collins" />
-                    <InputField type="Password" label="Password" name="password" className="iptf" onchange={handleChange} />
+                    <InputField  type="email" label="Email" name="email" className="inputemail" placeholder="e.g collins@gmail.com"  onchange={onChange}  />
+                    <InputField type="Password" label="Password" name="password" className="inputemail" onchange={onChange} />
                 </div>
                 <Button classname="btn" text="Signin" onclick={submit} />
                 <div style={{ marginTop: "20px" }}>

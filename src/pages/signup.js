@@ -8,11 +8,10 @@ import InputField from "../components/inputfields";
 
 function Signup() {
     let history = useHistory()
-    const [values, setvalues] = useState({})
-
+    const [values, setValues] = useState({})
 
     const onchange = (e) =>{
-        setvalues({...values, [e.target.name]: e.target.value})
+        setValues({...values, [e.target.name]: e.target.value})
         console.log(values);
     }
     
@@ -49,7 +48,7 @@ function Signup() {
                     <InputField type="email" label="Email"  name="email" className="inputlable" placeholder="e.g collins@gmail.com" onchange={onchange} />
                     <InputField type="password" label="Password" className="inputlable" name="password" onchange={onchange} />
                     <InputField type="Password" label="Confirm Password"className="inputlable" name="cpassword" onchange={onchange} />
-                    <Button text="Signup" className="buttoninput" onclick={submit} />
+                    <Button text="Signup" classname="inputbutton" onclick={submit} />
                 </div>
                     <div className="lin">
                     <Link to="/signin">Member of the Library? </Link>

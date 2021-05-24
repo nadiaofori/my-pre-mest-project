@@ -40,7 +40,7 @@
     justify-self: center;
 }
 
-.iptf{
+.inputemail{
     display: flex;
     flex-direction: column;
     height: 40px;
@@ -57,9 +57,10 @@
     font-size: larger;
     margin-top: 20px;
     border: none;
+    border-radius: 5px;
 }
 .userdiv{
-    font-size: xx-large;
+    /* font-size: xx-large; */
     justify-content: space-around;
 }
 .placeholder{

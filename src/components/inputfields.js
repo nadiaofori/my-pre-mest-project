@@ -1,6 +1,6 @@
 
 
-function InputField({ label, type, placeholder, name, onchange, className, value }) {
+function InputField({ label, type, placeholder, name, onchange, className }) {
 
 
     return (
@@ -10,7 +10,6 @@ function InputField({ label, type, placeholder, name, onchange, className, value
             </div>
             <div>
             <input type={type}
-               value={value}
                 placeholder={placeholder}
                 name={name}
                 onChange={onchange}
