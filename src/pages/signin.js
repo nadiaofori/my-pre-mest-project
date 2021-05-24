@@ -20,7 +20,7 @@ function Signin() {
     const submit = (e) => {
         e.preventDefault();
 
-        fetch('https://magical-art-backend.herokuapp.com//api/v1/login',
+        fetch('https://magical-art-backend.herokuapp.com/api/v1/login',
             {
                 method: 'POST',
                 body: JSON.stringify(values),
