@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-
-
 .wpage{
     display: flex;
     height: 100vh;
@@ -34,7 +32,7 @@
     }40%{
       background-image:url('https://touringghana.com/wp-content/uploads/2016/02/h2-696x464.jpg')
     }60%{
-      background-image:url('https://lh3.googleusercontent.com/proxy/FVaDLjhYe0O-bv-PBwnBYRld4N-SBMdngEEFk28CWHicA76UznlXIu6PZi8fxnqYvEENppJJDzWE74FpnbzjYtr1T7uIcdwYaftkbH_iqoK_2GiqMvHHw492nUcEqIGEMRhSH00Knw')
+      background-image:url('http://www.mathaf.org.qa/images/exhibitions/anatsui/4.jpg')
     }80%{
       background-image:url('https://www.africancontemporary.com/images/glover-74x61-1991.jpg')
     }100%{
@@ -52,9 +50,6 @@
     color: cornsilk;
     text-align: center;
     word-spacing: 10px;
-    /* text-shadow: 2px 2px 5px red; */
-    /* --transition-duration: 700ms;
-    font-family: "Sofia", sans-serif; */
 } 
 
 .food{

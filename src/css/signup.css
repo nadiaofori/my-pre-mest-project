@@ -19,6 +19,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    font-size: xx-large;
 }
 
 .inputform{
@@ -73,6 +74,7 @@
     border-radius: 5px;
     border: none;
     box-shadow: -1px 0px 10px 0px gray;
+    color: white;
 }
 .lin{
     margin-top: 10px;
@@ -82,4 +84,5 @@
     text-decoration: none;
     font-weight: 200;
     font-size: larger;
+    color: white;
 }

@@ -45,13 +45,11 @@ function Signup() {
             </div>
             <div className="inputform">
                 <div className="maininput">
-                    {/* <InputField type="text" label="Firstname" name="firstname"  className="inputlable" placeholder="e.g collins" onchange={onchange} />
-                    <InputField type="text" label="Lastname"  name="lastname" className="inputlable" placeholder="e.g wiredu" onchange={onchange} /> */}
                     <InputField type="text" label="Username"  name="username" className="inputlable" placeholder="e.g cole" onchange={onchange} />
                     <InputField type="email" label="Email"  name="email" className="inputlable" placeholder="e.g collins@gmail.com" onchange={onchange} />
                     <InputField type="password" label="Password" className="inputlable" name="password" onchange={onchange} />
                     <InputField type="Password" label="Confirm Password"className="inputlable" name="cpassword" onchange={onchange} />
-                    <Button text="Signup" classname="buttoninput" onclick={submit} />
+                    <Button text="Signup" className="buttoninput" onclick={submit} />
                 </div>
                     <div className="lin">
                     <Link to="/signin">Member of the Library? </Link>

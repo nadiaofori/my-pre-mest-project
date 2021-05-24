@@ -30,10 +30,10 @@ function Signin() {
 
     useEffect(() => {
         validateMethod(userInfo.fieldNameEmail, userInfo.email, userInfo, setUserInfo)
-        console.log(userInfo.email)
+        
     }, [userInfo.email, userInfo.emailValid])
 
-    // const [message, setmessage] = useState({})
+    const [message, setmessage] = useState({})
 
     const handleChange = (e) => {
         const value = e.target.value;
@@ -75,8 +75,6 @@ function Signin() {
             }, err => console.log(err))
 
     }
-
-
     return (
         <form className="logform">
             <div className="loginput">
@@ -85,7 +83,7 @@ function Signin() {
                     <img src={image} alt="icon" className="imageicon" />
                 </div>
                 <div className="inputfields">
-                    <InputField value={userInfo.email}  type="Username" label="Username" name="email" className="iptf" onchange={handleChange} placeholder="e.g collins" />
+                    <InputField value={userInfo.email}  type="Email" label="Email" name="email" className="iptf" onchange={handleChange} placeholder="e.g collins" />
                     <InputField type="Password" label="Password" name="password" className="iptf" onchange={handleChange} />
                 </div>
                 <Button classname="btn" text="Signin" onclick={submit} />
