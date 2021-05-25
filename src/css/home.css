@@ -24,7 +24,7 @@
     animation-timing-function: ease-out;
   }
   
-  @keyframes animate{
+  /* @keyframes animate{
     0%{
       background-image:url('https://hopeforghana.com/wp-content/uploads/2020/10/paul131-1024x852.jpg')
     }20%{
@@ -38,7 +38,7 @@
     }100%{
       background-image:url('https://www.artnews.com/wp-content/uploads/2015/08/ea11013-stressed-world-installed-2015-el-anatsui-fivedecades-theschool-hr-e1440773473964.jpg')
     }
-  }
+  } */
  .mpage{
     display: flex; 
     align-items: center;
