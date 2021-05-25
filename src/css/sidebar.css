@@ -1,7 +1,8 @@
 .sidebar{
     display: flex; 
     padding: 10px 0;
-    
+    background-color: #F66C35;
+    /* margin-top: 30px; */
 }
 .side:hover{
     cursor: pointer;

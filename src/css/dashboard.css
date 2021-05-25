@@ -1,4 +1,4 @@
-
+/* 
 .maindiv{
     display: flex;
     margin: 0;
@@ -8,29 +8,23 @@
 }
 .leftdiv{
     display: flex;
-    /* background-color: rgb(219, 89, 89); */
     flex: 0.3;
     flex-direction: column;
-}
+} */
 
 .rightdiv{
     display: flex;
-    /* background-color: green; */
     flex: 0.7;
     flex-direction: column;
 }
 .divisions{
     display: flex;
-    /* flex-direction: column; */
-    /* background-color: aqua; */
     flex: 0.5;
     padding: 10px;
 } 
 .divisions2{
     display: flex;
     flex: 0.5;
-    /* flex-direction: column; */
-    /* background-color: blueviolet; */
      padding: 10px;
 }  
 .sub1{
@@ -48,7 +42,6 @@
     justify-content: center;
     font-size: xx-large;
     width: 350px;
-    /* box-shadow: -1px -1px 20px 0px gray; */
     align-items: center;
     box-shadow: 0 1px 2px 0 rgba(60, 64, 67,0.302), 0 1px 3px 1px rgba(60, 64,67,0.149);
 }
@@ -131,36 +124,7 @@
     color: white;
     text-shadow: 2px 2px 5px red; 
 }
-.books{
-    display: flex;
-    /* background-color:black; */
-    flex: 0.2;
-    color:white;
-}
-.usp{
-    display: flex;
-    /* background-color:tomato; */
-    flex: 0.2;
-}
-.usw{
-    display: flex;
-    /* background-color:yellow; */
-    flex: 0.2;
-}
-.signout{
-    display: flex;
-    background-color:brown;
-    flex: 0.2;
-    /* height: 40px; */
-    /* width: 310px; */
-    font-size: larger;
-    /* margin-top: 20px;
-    margin-left: 40px;
-    padding: 5px 5px; */
-    border-radius: 5px;
-    border: none;
-    box-shadow: -1px 0px 10px 0px gray;
-}
+ 
 .branddiv{
     display: flex;
     background-color:transparent;
