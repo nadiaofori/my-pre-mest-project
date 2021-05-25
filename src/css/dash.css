@@ -1,13 +1,14 @@
 
-.maindiv{
+.hopediv{
     display: flex;
     margin: 0;
     padding: 0;
     height: 100vh;
     flex-direction: row;
-    background-color: white;
+    /* background-color: white; */
+    /* background-color: green; */
 }
-.leftdiv{
+.hope{
     display: flex;
     flex: 0.2;
     flex-direction: column;
@@ -20,11 +21,12 @@
 }
  .maincss{
     display: flex; 
-    background-color: #f74600; 
+    /* background-color: #f74600;  */
     justify-content: center;
     color: azure;
     flex: 0.1px;
     margin-bottom: 20px;
+    background-color: #F66C35;
 } 
 .bodydiv{
     display: flex;

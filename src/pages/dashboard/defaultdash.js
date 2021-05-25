@@ -12,6 +12,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import HomeIcon from '@material-ui/icons/Home';
 import { useHistory, Link } from "react-router-dom"
 import '../../css/dash.css'
+import Dashboardroutes from "../dashboard/dashboardroutes"
 
 
 
@@ -24,25 +25,26 @@ function Dashboard() {
         history.push('/')
     }
     return (
-        <div className="maindiv">
-            <div className="leftdiv">   
-                    <Sidebar icon={(<HomeIcon />)} label ={ 'Dashboard' } />
-                    <Link to="/dashboard/books">
-                    <Sidebar icon={(<BookIcon />)} label ={ 'Books' } />
-                    </Link>
-                    <Sidebar icon={(<PeopleAltIcon />)} label ={ 'User profile' } />
-                    <Sidebar icon={(<PeopleAltIcon />)} label ={ 'User Work' } />
-                    <Sidebar icon={(<LocationOnIcon />)} label ={ 'Location' } />
-                    <div >
-                    <Button text="Signout" onclick={ submit } classname="signout"style={{ marginLeft:"12px", marginRight:"12px", flex:"0.2", fontSize:"large", height:"50px", width:"100px", border:"none", borderRadius:"5px",   boxShadow: "-1px 0px 10px 0px gray", marginTop:"50px", backgroundColor:"#F66C35"}} />
-                    </div> 
+        <div className="content">
+            <div className="maincss">
+                <h3>Welcome to the beautiful work some famous artist in Ghana</h3>
             </div>
-          <div className="content">
-                <div className="maincss">
-                        <h3>Welcome to the beautiful work some famous artist in Ghana</h3>
-                </div> 
-                <div className="bodydiv">
-                    <div className="chamber1">
+            <div className="bodydiv">
+                <div className="hopediv">
+                    <div className="hope">
+                        <Sidebar icon={(<HomeIcon />)} label={'Dashboard'} />
+                        <Link to="/dashboard/books">
+                            <Sidebar icon={(<BookIcon />)} label={'Books'} />
+                        </Link>
+                        <Sidebar icon={(<PeopleAltIcon />)} label={'User profile'} />
+                        <Sidebar icon={(<PeopleAltIcon />)} label={'User Work'} />
+                        <Sidebar icon={(<LocationOnIcon />)} label={'Location'} />
+                        <div >
+                            <Button text="Signout" onclick={submit} classname="signout" style={{ marginLeft: "12px", marginRight: "12px", flex: "0.2", fontSize: "large", height: "50px", width: "100px", border: "none", borderRadius: "5px", boxShadow: "-1px 0px 10px 0px gray", marginTop: "50px", backgroundColor: "#F66C35" }} />
+                        </div>
+                    </div>
+                    <Dashboardroutes />
+                    {/* <div className="chamber1">
                         <div className="elane">
                             <img src={download} alt="picture" className="ela" />
                             <h5>El Anatsui's unstoppable</h5>
@@ -55,8 +57,8 @@ function Dashboard() {
                             <img src={charlse} alt="picture" className="ela"/>
                             <h5>The ceramic pot of Charles Hervie</h5>
                         </div>
-                    </div>
-                    <div className="chamber2">
+                    </div> */}
+                    {/* <div className="chamber2">
                         <div className="textile">
                             <img src={cloth} alt="picture"className="ela" />
                             <h5>The african prints from the textile industry</h5>
@@ -69,9 +71,9 @@ function Dashboard() {
                             <img src={lead} alt="picture" className="ela" />
                             <h5>The Ahenema slipper </h5>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-            </div>     
+            </div>
         </div>
     )
 }

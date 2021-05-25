@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Books = () => {
     return (
-        <div>
+        <div className="maindiv">
             <div className="rightdiv">
 
                 <div className="divisions">
