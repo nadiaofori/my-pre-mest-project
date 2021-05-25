@@ -27,7 +27,7 @@ function Dashboard() {
     return (
         <div className="content">
             <div className="maincss">
-                <h3>Welcome to the beautiful work some famous artist in Ghana</h3>
+                <h3>Welcome to the beautiful work of some famous artist in Ghana</h3>
             </div>
             <div className="bodydiv">
                 <div className="hopediv">
@@ -36,7 +36,9 @@ function Dashboard() {
                         <Link to="/dashboard/books">
                             <Sidebar icon={(<BookIcon />)} label={'Books'} />
                         </Link>
+                        <Link to="/dashboard/userprofile">
                         <Sidebar icon={(<PeopleAltIcon />)} label={'User profile'} />
+                        </Link>
                         <Sidebar icon={(<PeopleAltIcon />)} label={'User Work'} />
                         <Sidebar icon={(<LocationOnIcon />)} label={'Location'} />
                         <div >

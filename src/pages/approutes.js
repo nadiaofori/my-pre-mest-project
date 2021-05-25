@@ -11,6 +11,7 @@ import Leather from "../details/leather/leather"
 import Painting from "../details/painting/painting"
 import Defaultdash from "../pages/dashboard/defaultdash"
 import Books from "../pages/dashboard/Books"
+import Userprofile from "../pages/dashboard/Userprofile"
 
 const AppRoutes = () => {
 
@@ -27,7 +28,8 @@ const AppRoutes = () => {
             <Route exact path="/painting" component={Painting}/>
             <Route exact path="/defaultdash" component={Defaultdash}/>
             <Route exact path="/dashboard/books" component={Defaultdash}/>
-            <Route exact path="/books" component={Books}/>"
+            {/* <Route exact path="/books" component={Books}/> */}
+            <Route exact path="/dashboard/userprofile" component={Defaultdash}/>
         </Switch>
     )
 }

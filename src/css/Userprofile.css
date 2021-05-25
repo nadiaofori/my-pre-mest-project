@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    /* background-color: blue; */
+     /* height: 120vh; */
+     /* display: flex; */
+     /* flex-direction: column; */
+     font-family: "Open Sans", sans-serif, Arial, Helvetica, sans-serif;
+    }
+    
+
+
+    .upperdiv{
+        display: flex;
+        flex:0.2;
+        background-color: darkgrey;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        flex-direction: column;
+    }
+
+    .lowerdiv{
+        display: flex;
+        justify-content: 'center';
+        flex-direction: row;   
+    }
+    
+
+     .newform{
+        display: flex;
+        flex: 0.6;
+        justify-content: center;
+        align-items: center;
+       flex-direction: row;
+        
+    } 
+
+    .imagecontainer{
+        display: flex;
+        flex: 0.4;
+     
+        
+    }
+
+   
+
+    .userdetails{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* .introduction{
+        display: flex;
+    } */

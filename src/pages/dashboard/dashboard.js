@@ -30,7 +30,9 @@ function Dashboard() {
                     <Link to="/dashboard/books">
                     <Sidebar icon={(<BookIcon />)} label ={ 'Books' } />
                     </Link>
+                    <Link to="/dashboard/userprofile">
                     <Sidebar icon={(<PeopleAltIcon />)} label ={ 'User profile' } />
+                    </Link>
                     <Sidebar icon={(<PeopleAltIcon />)} label ={ 'User Work' } />
                     <Sidebar icon={(<LocationOnIcon />)} label ={ 'Location' } />
                     <div >
